@@ -1,0 +1,271 @@
+[gd_scene load_steps=61 format=2]
+
+[ext_resource path="res://Cenas/Main/Animated Background/mainbackground_00007.png" type="Texture" id=1]
+[ext_resource path="res://Cenas/Main/Animated Background/mainbackground_00013.png" type="Texture" id=2]
+[ext_resource path="res://Cenas/Main/Animated Background/mainbackground_00003.png" type="Texture" id=3]
+[ext_resource path="res://Cenas/Main/Animated Background/mainbackground_00008.png" type="Texture" id=4]
+[ext_resource path="res://Cenas/Main/Animated Background/mainbackground_00014.png" type="Texture" id=5]
+[ext_resource path="res://Cenas/Main/Animated Background/mainbackground_00006.png" type="Texture" id=6]
+[ext_resource path="res://Cenas/Main/Animated Background/mainbackground_00017.png" type="Texture" id=7]
+[ext_resource path="res://Cenas/Main/Animated Background/mainbackground_00012.png" type="Texture" id=8]
+[ext_resource path="res://Cenas/Main/Animated Background/mainbackground_00005.png" type="Texture" id=9]
+[ext_resource path="res://Cenas/Main/Animated Background/mainbackground_00011.png" type="Texture" id=10]
+[ext_resource path="res://Cenas/Main/Animated Background/mainbackground_00015.png" type="Texture" id=11]
+[ext_resource path="res://Cenas/Main/Animated Background/mainbackground_00001.png" type="Texture" id=12]
+[ext_resource path="res://Cenas/Main/Animated Background/mainbackground_00016.png" type="Texture" id=13]
+[ext_resource path="res://Cenas/Main/Animated Background/mainbackground_00002.png" type="Texture" id=14]
+[ext_resource path="res://Cenas/Main/Animated Background/mainbackground_00010.png" type="Texture" id=15]
+[ext_resource path="res://Cenas/Main/Animated Background/mainbackground_00018.png" type="Texture" id=16]
+[ext_resource path="res://Cenas/Main/Animated Background/mainbackground_00004.png" type="Texture" id=17]
+[ext_resource path="res://Cenas/Main/Animated Background/mainbackground_00009.png" type="Texture" id=18]
+[ext_resource path="res://Cenas/Main/Buttons/Credits Icon0001.png" type="Texture" id=19]
+[ext_resource path="res://Cenas/Main/Buttons/Credits Icon0000.png" type="Texture" id=20]
+[ext_resource path="res://Cenas/Main/Buttons/Credits Icon0002.png" type="Texture" id=21]
+[ext_resource path="res://Cenas/Main/Buttons/Credits Icon0003.png" type="Texture" id=22]
+[ext_resource path="res://Cenas/Main/Buttons/Credits Icon0004.png" type="Texture" id=23]
+[ext_resource path="res://Cenas/Main/Menu.gd" type="Script" id=24]
+[ext_resource path="res://Cenas/Main/Naruto Main Theme.wav" type="AudioStream" id=25]
+[ext_resource path="res://njnaruto.ttf" type="DynamicFontData" id=26]
+[ext_resource path="res://Cenas/Main/Buttons/register_00011.png" type="Texture" id=27]
+[ext_resource path="res://Cenas/Main/Buttons/register_00001.png" type="Texture" id=28]
+[ext_resource path="res://Cenas/Main/Buttons/register_00007.png" type="Texture" id=29]
+[ext_resource path="res://Cenas/Main/Buttons/register_00005.png" type="Texture" id=30]
+[ext_resource path="res://Cenas/Main/Buttons/register_00013.png" type="Texture" id=31]
+[ext_resource path="res://Cenas/Main/Buttons/register_00003.png" type="Texture" id=32]
+[ext_resource path="res://Cenas/Main/Buttons/register_00006.png" type="Texture" id=33]
+[ext_resource path="res://Cenas/Main/Buttons/register_00014.png" type="Texture" id=34]
+[ext_resource path="res://Cenas/Main/Buttons/register_00002.png" type="Texture" id=35]
+[ext_resource path="res://Cenas/Main/Buttons/register_00008.png" type="Texture" id=36]
+[ext_resource path="res://Cenas/Main/Buttons/register_00009.png" type="Texture" id=37]
+[ext_resource path="res://Cenas/Main/Buttons/register_00012.png" type="Texture" id=38]
+[ext_resource path="res://Cenas/Main/Buttons/register_00004.png" type="Texture" id=39]
+[ext_resource path="res://Cenas/Main/Buttons/register_00010.png" type="Texture" id=40]
+[ext_resource path="res://Cenas/Main/Buttons/firebar_00003.png" type="Texture" id=41]
+[ext_resource path="res://Cenas/Main/Buttons/firebar_00008.png" type="Texture" id=42]
+[ext_resource path="res://Cenas/Main/Buttons/firebar_00006.png" type="Texture" id=43]
+[ext_resource path="res://Cenas/Main/Buttons/firebar_00001.png" type="Texture" id=44]
+[ext_resource path="res://Cenas/Main/Buttons/firebar_00004.png" type="Texture" id=45]
+[ext_resource path="res://Cenas/Main/Buttons/firebar_00005.png" type="Texture" id=46]
+[ext_resource path="res://Cenas/Main/Buttons/firebar_00007.png" type="Texture" id=47]
+[ext_resource path="res://Cenas/Main/Buttons/firebar_00009.png" type="Texture" id=48]
+[ext_resource path="res://Cenas/Main/Buttons/firebar_00002.png" type="Texture" id=49]
+[ext_resource path="res://Cenas/Main/Buttons/firebar_00010.png" type="Texture" id=50]
+[ext_resource path="res://Cenas/Main/Buttons/firebar_00011.png" type="Texture" id=51]
+[ext_resource path="res://Cenas/Main/Buttons/firebar_00012.png" type="Texture" id=52]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 12 ), ExtResource( 14 ), ExtResource( 3 ), ExtResource( 17 ), ExtResource( 9 ), ExtResource( 6 ), ExtResource( 1 ), ExtResource( 4 ), ExtResource( 18 ), ExtResource( 15 ), ExtResource( 10 ), ExtResource( 8 ), ExtResource( 2 ), ExtResource( 5 ), ExtResource( 11 ), ExtResource( 13 ), ExtResource( 7 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "default",
+"speed": 1.0
+} ]
+
+[sub_resource type="AnimatedTexture" id=2]
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 20 ), ExtResource( 19 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ) ],
+"loop": true,
+"name": "default",
+"speed": 6.0
+} ]
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ ExtResource( 44 ), ExtResource( 49 ), ExtResource( 41 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 43 ), ExtResource( 47 ), ExtResource( 42 ), ExtResource( 48 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="DynamicFont" id=5]
+size = 7
+outline_size = 1
+outline_color = Color( 0.945098, 0.388235, 0.0156863, 1 )
+use_filter = true
+font_data = ExtResource( 26 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 6
+outline_size = 1
+outline_color = Color( 0.929412, 0.372549, 0, 1 )
+use_filter = true
+font_data = ExtResource( 26 )
+
+[sub_resource type="SpriteFrames" id=8]
+animations = [ {
+"frames": [ ExtResource( 28 ), ExtResource( 35 ), ExtResource( 32 ), ExtResource( 39 ), ExtResource( 30 ), ExtResource( 33 ), ExtResource( 29 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 40 ), ExtResource( 27 ), ExtResource( 38 ), ExtResource( 31 ), ExtResource( 34 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 24 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackGroundMain" type="AnimatedSprite" parent="."]
+position = Vector2( 160.192, 96.1353 )
+scale = Vector2( 0.255176, 0.269598 )
+frames = SubResource( 1 )
+frame = 12
+
+[node name="CreditsButton" type="Button" parent="."]
+anchor_right = 0.11
+anchor_bottom = 0.089
+margin_left = 263.751
+margin_top = 138.897
+margin_right = 752.551
+margin_bottom = 639.809
+rect_scale = Vector2( 0.112439, 0.109577 )
+icon = SubResource( 2 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="CreditsButton"]
+position = Vector2( 229.711, 195.467 )
+frames = SubResource( 3 )
+frame = 4
+
+[node name="MainThemeMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 25 )
+autoplay = true
+
+[node name="MailFlames" type="AnimatedSprite" parent="."]
+position = Vector2( 142.95, 119.08 )
+scale = Vector2( 0.227689, 0.11337 )
+frames = SubResource( 4 )
+frame = 1
+speed_scale = 2.0
+playing = true
+
+[node name="PassFlames" type="AnimatedSprite" parent="."]
+position = Vector2( 148.965, 143.62 )
+scale = Vector2( 0.15886, 0.092425 )
+frames = SubResource( 4 )
+speed_scale = 2.0
+playing = true
+
+[node name="MailAddress" type="TextEdit" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -100.0
+margin_top = -58.0
+margin_right = 100.0
+margin_bottom = -46.0
+focus_next = NodePath("../Password")
+custom_fonts/font = SubResource( 5 )
+custom_colors/background_color = Color( 0, 0, 0, 1 )
+text = "Example@Example.com"
+syntax_highlighting = true
+draw_spaces = true
+hiding_enabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextEmail" type="LineEdit" parent="."]
+margin_left = 61.0
+margin_top = 123.0
+margin_right = 259.0
+margin_bottom = 137.0
+custom_styles/normal = SubResource( 6 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+placeholder_text = "Exemplo: naruto@gmail.com"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Password" type="TextEdit" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -68.5
+margin_top = -44.0
+margin_right = 68.5
+margin_bottom = -32.0
+custom_fonts/font = SubResource( 5 )
+custom_colors/background_color = Color( 0, 0, 0, 1 )
+text = "Password"
+syntax_highlighting = true
+draw_spaces = true
+hiding_enabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextSenha" type="LineEdit" parent="."]
+margin_left = 90.0
+margin_top = 145.0
+margin_right = 231.0
+margin_bottom = 159.0
+custom_styles/normal = SubResource( 6 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+placeholder_text = "Exemplo: naruto1234"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RegisterButton" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -26.0
+margin_top = -16.0
+margin_right = 26.0
+margin_bottom = -2.0
+custom_fonts/font = SubResource( 7 )
+text = "Register Now"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimatedRegister" type="AnimatedSprite" parent="RegisterButton"]
+position = Vector2( -2.62207, 2.40186 )
+rotation = 0.127793
+scale = Vector2( 0.0454143, 0.053153 )
+frames = SubResource( 8 )
+
+[node name="Join" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -26.0
+margin_top = -31.0
+margin_right = 26.0
+margin_bottom = -17.0
+focus_previous = NodePath("../Password")
+custom_fonts/font = SubResource( 7 )
+text = "Join!"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
+[connection signal="mouse_entered" from="CreditsButton" to="." method="_on_CreditsButton_mouse_entered"]
+[connection signal="mouse_exited" from="CreditsButton" to="." method="_on_CreditsButton_mouse_exited"]
+[connection signal="pressed" from="CreditsButton" to="." method="_on_CreditsButton_pressed"]
+[connection signal="mouse_entered" from="RegisterButton" to="." method="_on_RegisterButton_mouse_entered"]
+[connection signal="mouse_exited" from="RegisterButton" to="." method="_on_RegisterButton_mouse_exited"]
+[connection signal="pressed" from="RegisterButton" to="." method="_on_RegisterButton_pressed"]
+[connection signal="pressed" from="Join" to="." method="_on_Join_pressed"]
+[connection signal="request_completed" from="HTTPRequest" to="." method="_on_HTTPRequest_request_completed"]

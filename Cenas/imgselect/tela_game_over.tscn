@@ -1,0 +1,90 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://script_tela_game_over_iniciar.gd" type="Script" id=1]
+[ext_resource path="res://Cenas/imgselect/sair.png" type="Texture" id=2]
+[ext_resource path="res://Cenas/imgselect/Iniciar.png" type="Texture" id=3]
+[ext_resource path="res://Cenas/imgselect/cena_game_over.png" type="Texture" id=4]
+[ext_resource path="res://Cenas/imgselect/fehcar_jogo_game_over.gd" type="Script" id=5]
+[ext_resource path="res://Cenas/imgselect/game_over.png" type="Texture" id=6]
+
+[sub_resource type="Animation" id=1]
+resource_name = "game_over"
+step = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.6, 1.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 167.998, 0 ), Vector2( 167.998, 80.9086 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.6, 1.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[node name="Node2D" type="Node2D"]
+
+[node name="cena_game_over" type="Sprite" parent="."]
+position = Vector2( 159.278, 95.8273 )
+scale = Vector2( 0.53429, 0.479244 )
+texture = ExtResource( 4 )
+
+[node name="jogar_de_novo" type="Button" parent="."]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 134.078
+margin_top = 143.273
+margin_right = 155.078
+margin_bottom = 163.273
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="jogar_novamente" type="Sprite" parent="jogar_de_novo"]
+position = Vector2( 9.96884, 9.76276 )
+scale = Vector2( 0.249153, 0.249153 )
+texture = ExtResource( 3 )
+
+[node name="fehcar_jogo_game_over" type="Button" parent="."]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 179.0
+margin_top = 143.0
+margin_right = 201.0
+margin_bottom = 164.0
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="fechar_jogo" type="Sprite" parent="fehcar_jogo_game_over"]
+position = Vector2( 10.9237, 9.66644 )
+scale = Vector2( 0.26621, 0.26621 )
+texture = ExtResource( 2 )
+
+[node name="img_gamer_over" type="Sprite" parent="."]
+position = Vector2( 165.001, 73.4171 )
+scale = Vector2( 0.504886, 0.46685 )
+texture = ExtResource( 6 )
+
+[node name="anima" type="AnimationPlayer" parent="img_gamer_over"]
+anims/game_over = SubResource( 1 )
+
+[connection signal="mouse_entered" from="jogar_de_novo" to="jogar_de_novo" method="_on_Button_mouse_entered"]
+[connection signal="mouse_exited" from="jogar_de_novo" to="jogar_de_novo" method="_on_Button_mouse_exited"]
+[connection signal="pressed" from="jogar_de_novo" to="jogar_de_novo" method="_on_Button_pressed"]
+[connection signal="mouse_entered" from="fehcar_jogo_game_over" to="fehcar_jogo_game_over" method="_on_fehcar_jogo_game_over_mouse_entered"]
+[connection signal="mouse_exited" from="fehcar_jogo_game_over" to="fehcar_jogo_game_over" method="_on_fehcar_jogo_game_over_mouse_exited"]
+[connection signal="pressed" from="fehcar_jogo_game_over" to="fehcar_jogo_game_over" method="_on_fehcar_jogo_game_over_pressed"]

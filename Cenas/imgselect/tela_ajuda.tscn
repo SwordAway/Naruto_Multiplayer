@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Cenas/imgselect/scripts_botoes/script_fechar_ajuda.gd" type="Script" id=1]
+[ext_resource path="res://Cenas/imgselect/sair.png" type="Texture" id=2]
+[ext_resource path="res://Cenas/imgselect/telaajuda.png" type="Texture" id=3]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 160.196, 95.966 )
+scale = Vector2( 0.555498, 0.373796 )
+texture = ExtResource( 3 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Sprite"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = -274.0
+margin_top = -167.0
+margin_right = 94.0
+margin_bottom = -63.0
+rect_scale = Vector2( 1.40359, 1.95016 )
+text = "Use as setas para navegar entra os personagens após isso pressione enter ou clique em cima do paly para começar o jogo.
+
+Para fechar tela de ajuda clique no botão de sair."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="fechar_ajuda" type="Button" parent="."]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 290.672
+margin_top = 164.065
+margin_right = 302.672
+margin_bottom = 184.065
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="close_help" type="Sprite" parent="fechar_ajuda"]
+position = Vector2( 5.43134, 9.36444 )
+scale = Vector2( 0.254669, 0.275818 )
+texture = ExtResource( 2 )
+
+[connection signal="mouse_entered" from="fechar_ajuda" to="fechar_ajuda" method="_on_fechar_ajuda_mouse_entered"]
+[connection signal="mouse_exited" from="fechar_ajuda" to="fechar_ajuda" method="_on_fechar_ajuda_mouse_exited"]
+[connection signal="pressed" from="fechar_ajuda" to="fechar_ajuda" method="_on_fechar_ajuda_pressed"]

@@ -1,0 +1,58 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Cenas/Loading/imagens/loading0.png" type="Texture" id=1]
+[ext_resource path="res://Cenas/Loading/imagens/loading1.png" type="Texture" id=2]
+[ext_resource path="res://Cenas/Loading/imagens/loading3.png" type="Texture" id=3]
+[ext_resource path="res://Cenas/Loading/imagens/bg.png" type="Texture" id=4]
+[ext_resource path="res://Cenas/Loading/imagens/loading2.png" type="Texture" id=5]
+[ext_resource path="res://Cenas/Loading/imagens/bandana3.png" type="Texture" id=6]
+[ext_resource path="res://Cenas/Loading/imagens/bandana1.png" type="Texture" id=7]
+[ext_resource path="res://Cenas/Loading/imagens/bandana2.png" type="Texture" id=8]
+[ext_resource path="res://Cenas/Loading/Script/script-Loading.gd" type="Script" id=9]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 5 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "loading",
+"speed": 1.0
+} ]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "bandana",
+"speed": 3.0
+} ]
+
+[node name="Loading" type="Node2D"]
+script = ExtResource( 9 )
+
+[node name="Sprite" type="Sprite" parent="."]
+
+[node name="BG" type="Sprite" parent="Sprite"]
+position = Vector2( 159.694, 96.6779 )
+scale = Vector2( 0.258426, 0.192358 )
+texture = ExtResource( 4 )
+
+[node name="Anima1" type="AnimatedSprite" parent="Sprite"]
+position = Vector2( 163.583, 169.573 )
+scale = Vector2( 0.206573, 0.206573 )
+frames = SubResource( 1 )
+animation = "loading"
+frame = 1
+playing = true
+
+[node name="Anima2" type="AnimatedSprite" parent="Sprite"]
+position = Vector2( 157, 154 )
+frames = SubResource( 2 )
+animation = "bandana"
+frame = 1
+playing = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 4.0
+one_shot = true
+autostart = true
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
